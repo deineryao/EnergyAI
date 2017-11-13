@@ -10,7 +10,7 @@ mixin carousel-caption(item)
 			p #{item.p}
 		unless !item.button
 			p
-				a.btn.btn-lg.btn-primary(href="#{item.button.url}" role="button") #{item.button.caption}
+				a.btn.btn-lg.btn-primary(href=`${item.button.url}` role="button") #{item.button.caption}
 
 //- carousel
 mixin carousel(id,items)
@@ -19,9 +19,9 @@ mixin carousel(id,items)
 		ol.carousel-indicators
 			each item,index in items
 				if(index === 0)
-					li.active(data-target=`#carousel-${id}`, data-slide-to="#{index}")
+					li.active(data-target=`#carousel-${id}`, data-slide-to=`${index}`)
 				else
-					li(data-target=`#carousel-${id}`, data-slide-to="#{index}")
+					li(data-target=`#carousel-${id}`, data-slide-to=`${index}`)
 
 
 		//- Wrapper for slides
