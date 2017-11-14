@@ -2,9 +2,9 @@ extends ./layouts/default.pug
 include ./mixin/carousel.pug
 
 block content
-  .navbar-wrapper
+  .navbar-wrapper.headerWrapper
     .container
-      nav.navbar.navbar-inverse.navbar-static-transition-group
+      nav.navbar.navbar-inverse.navbar-static-transition-group.mainNav
         .container
           .navbar-header
             button(type="button",class="navbar-toggle collapsed",data-toggle="collapse",data-target="#navbar",aria-expanded="false",aria-controls="navbar")
@@ -12,18 +12,14 @@ block content
               span.icon-bar
               span.icon-bar
               span.icon-bar
-            a(class="navbar-brand", href="#") Project name
+            a(class="navbar-brand", href="#") Energy AI开放平台
           #navbar.navbar-collapse.collapse
             ul.nav.navbar-nav
               li.active
-                a(href="#") Home
-              li
-                a(href="#about") about
-              li 
-                a(href="#contact") contact
+                a(href="#") 首页
               li.dropdown
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                    | Dropdown 
+                    | 产品服务 
                     span.caret
                 ul.dropdown-menu(role='menu')
                   li
@@ -38,6 +34,8 @@ block content
                     a(href='#') Separated link
                   li
                     a(href='#') One more separated link
+              li 
+                a(href="#contact") 关于我们
   // Carousel
   // ==================================================
   +carousel("myCarousel",
@@ -112,3 +110,4 @@ block content
         a(href='#') Privacy
         |  · 
       a(href='#') Terms
+    
