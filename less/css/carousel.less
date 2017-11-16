@@ -1,6 +1,8 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+@import "default.less";
+
 
 body {
   padding-bottom: 40px;
@@ -30,6 +32,11 @@ body {
   }
   .mainNav{
     transition: all .5s;
+  }
+  .nav-img{
+    width:32px;
+    height: 32px;
+    margin: -5px 5px 0 0;
   }
 }
 
@@ -72,17 +79,26 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
+.marketing{
+  .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  h3 {
+    font-weight: normal;
+    font-size:18px;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 24px;
+  }
+  .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+} 
+
 
 
 /* Featurettes
