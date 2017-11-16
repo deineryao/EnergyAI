@@ -2,34 +2,6 @@ extends ./layouts/default.pug
 include ./mixin/carousel.pug
 
 block content
-  .navbar-wrapper.headerWrapper.navbar-fixed-top
-    .container
-      nav.navbar.navbar-inverse.navbar-static-transition-group.mainNav
-        .container
-          .navbar-header
-            button(type="button",class="navbar-toggle collapsed",data-toggle="collapse",data-target="#navbar",aria-expanded="false",aria-controls="navbar")
-              span.sr-only Toggle navigation
-              span.icon-bar
-              span.icon-bar
-              span.icon-bar
-            a(class="navbar-brand", href="#")
-              img(src="/images/kungfu.png" class="nav-img pull-left")
-              span Energy AI开放平台
-          #navbar.navbar-collapse.collapse
-            ul.nav.navbar-nav
-              li.active
-                a(href="#") 首页
-              li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                    | 产品服务 
-                    span.caret
-                ul.dropdown-menu(role='menu')
-                  li
-                    a(href='#') 平台技术
-                  li
-                    a(href='#') 场景技术
-              li 
-                a(href="#contact") 关于我们
   // Carousel
   // ==================================================
   .carouselBanner
@@ -64,46 +36,31 @@ block content
           | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
         p
           a.btn.btn-default(href='#', role='button') View details »
-    // START THE FEATURETTES
-    hr.featurette-divider
-    .row.featurette
-      .col-md-7
-        h2.featurette-heading
-          | First featurette heading.
-          span.text-muted It'll blow your mind.
-          p.lead
-            | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-      .col-md-5
-        img.featurette-image.img-responsive.center-block(src='../images/featurette1.jpg', alt='Generic placeholder image')
-    hr.featurette-divider
-    .row.featurette
-      .col-md-7.col-md-push-5
-        h2.featurette-heading
-          | Oh yeah, it's that good.
-          span.text-muted See for yourself.
-        p.lead
-          | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-      .col-md-5.col-md-pull-7
-        img.featurette-image.img-responsive.center-block(src='../images/featurette2.jpg', alt='Generic placeholder image')
-    hr.featurette-divider
-    .row.featurette
-      .col-md-7
-        h2.featurette-heading
-          | And lastly, this one.
-          span.text-muted Checkmate.
-        p.lead
-          | Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-      .col-md-5
-        img.featurette-image.img-responsive.center-block(src='../images/featurette3.jpg', alt='Generic placeholder image')
-    hr.featurette-divider
-    // /END THE FEATURETTES
-    // FOOTER
-    footer
-      p.pull-right
-        a(href='#') Back to top
-      p
-        | © 2017 Company, Inc. · 
-        a(href='#') Privacy
-        |  · 
-      a(href='#') Terms
+  // START THE FEATURETTES
+  hr.featurette-divider
+  .container.skill
+    h2.text-center.mb-40 全球领先能源互联网AI服务
+    .row
+      .col-lg-3
+        a(href='#')
+          img(src="../images/skill-1.png", alt="深度学习" width='128', height='128')
+          h3 深度学习
+      .col-lg-3
+        a(href='#')
+          img(src="../images/skill-2.png", alt="强化学习" width='128', height='128')
+          h3 强化学习
+      .col-lg-3
+        a(href='#')
+          img(src="../images/skill-3.png", alt="图像处理" width='128', height='128')
+          h3 图像处理
+      .col-lg-3
+        a(href='#')
+          img(src="../images/skill-4.png", alt="自然语言处理" width='128', height='128')
+          h3 自然语言处理            
+  // /END THE FEATURETTES
+  hr.featurette-divider
+  // try one try
+  .container.try
+    a.btn.btn-info.tryuse(href='/demo') 立即使用
+
     

@@ -1,0 +1,28 @@
+.navbar-wrapper.headerWrapper.navbar-fixed-top
+  .container
+    nav.navbar.navbar-inverse.navbar-static-transition-group.mainNav
+      .container
+        .navbar-header
+          button(type="button",class="navbar-toggle collapsed",data-toggle="collapse",data-target="#navbar",aria-expanded="false",aria-controls="navbar")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a(class="navbar-brand", href="#")
+            img(src="/images/kungfu.png" class="nav-img pull-left")
+            span Energy AI开放平台
+        #navbar.navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href="#") 首页
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                  | 产品服务 
+                  span.caret
+              ul.dropdown-menu(role='menu')
+                li
+                  a(href='#') 平台技术
+                li
+                  a(href='#') 场景技术
+            li 
+              a(href="#contact") 关于我们

@@ -12,8 +12,10 @@ html(lang="en")
 			link(rel="stylesheet",href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css")
 			link(rel="stylesheet", href="/css/carousel.css")
 	body(data-spy="scroll",data-target=".scrollspy")
+		include ./header.pug
 		block content
-			
+		include ./footer.pug
+		
 		block scripts
 			script(src="https://cdn.bootcss.com/jquery/1.11.2/jquery.min.js")
 			script(src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js")
