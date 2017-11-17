@@ -1,1 +1,53 @@
-include ./layouts/default.pug
+extends ./layouts/default.pug
+
+block content
+  .demoBox
+    .container
+      h2 负荷预测
+      p.mb-20 我们开始对副时代峻峰可视对讲菲利克斯大数据法律手段积分了看技术时代峻峰看了看时代峻峰了框架是时代峻峰了开始建档立卡，水电费洛杉矶发了看技术第六空间，时代峻峰可升降菲利克斯建档立卡，如下所示：
+      .panel.panel-info
+        .panel-heading 第一步 选择参数
+        .panel-body
+          label.checkbox-inline.c-checkbox
+            input#inlineCheckbox10(type='checkbox', value='option1' disabled checked)
+            span.fa.fa-check
+            |  节假日
+          label.checkbox-inline.c-checkbox
+            input#inlineCheckbox20(type='checkbox', value='option2')
+            span.fa.fa-check
+            |  阴天
+          label.checkbox-inline.c-checkbox
+            input#inlineCheckbox30(type='checkbox', value='option3')
+            span.fa.fa-check
+            |  买了大电视
+      .panel.panel-info
+        .panel-heading 第二步 选择算法
+        .panel-body
+          label.radio-inline.c-radio
+            input#inlineradio1(type='radio', name="i-radio", value='option1', checked)
+            span.fa.fa-circle
+            |  推荐算法
+          label.radio-inline.c-radio
+            input#inlineradio2(type='radio', name="i-radio", value='option2')
+            span.fa.fa-circle
+            |  哥德巴赫猜想
+          label.radio-inline.c-radio
+            input#inlineradio3(type='radio', name="i-radio", value='option3')
+            span.fa.fa-circle
+            |  线性回归
+      .panel.panel-info
+        .panel-heading 第三步 选择或上传数据样例
+        .panel-body
+          .panel-heading 选择系统数据样例
+          blockquote
+            label.checkbox-inline.c-checkbox
+            input#preFiles(type='checkbox', value='data1', checked)
+            span.fa.fa-check
+              a(href="/download/demo1.xlsx")  demo1.xlsx   
+          .panel-heading 自定义上传数据 
+          blockquote
+            .upload-box
+              input#input-b1(type='file' class="file") 
+      .container.try
+        button.btn.btn-success.tryuse#startBtn 开始执行
+      #main-echarts

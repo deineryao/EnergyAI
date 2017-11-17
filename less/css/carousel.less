@@ -6,6 +6,7 @@
 
 body {
   padding-bottom: 40px;
+  padding-top: 50px;
   color: #5a5a5a;
 }
 
@@ -44,10 +45,6 @@ body {
 -------------------------------------------------- */
 
 /* Carousel base class */
-.carouselBanner {
-  position: relative;
-  top: 50px;
-}
 .carousel {
   height: 500px;
   margin-bottom: 60px;
@@ -134,6 +131,23 @@ body {
   letter-spacing: -1px;
 }
 
+//demo page
+.demoBox{
+  .container{
+    > h2{
+      padding: 20px;
+      font-size: 24px;
+      line-height: 1.1;
+      color: #929292;
+      border-bottom: 1px solid #cfdbe2;
+    }
+  }
+}
+#main-echarts{
+  width:100%;
+  height:600px;
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -141,7 +155,7 @@ body {
 @media (min-width: 768px) {
   .navbar-wrapper{
     .container{
-      width: 1200px;
+      width: 100%;
     }
     .navbar {
       padding-right: 0;
