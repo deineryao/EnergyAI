@@ -3,14 +3,6 @@
 /* Padding below the footer and lighter body text */
 @import "default.less";
 
-
-body {
-  padding-bottom: 40px;
-  padding-top: 50px;
-  color: #5a5a5a;
-}
-
-
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -149,17 +141,146 @@ body {
 }
 
 
+//scenes page
+.scenesBox{
+  background: #f4f5f7;
+  .home-banner{
+    background: url('/images/banner.jpg') 50% 50% no-repeat;
+    background-size: cover;
+    .banner-content{
+      text-align: center;
+      height: 450px;
+      background: rgba(0,0,0,.3);
+      overflow: hidden;
+      position: relative;
+      box-sizing: border-box;
+      .ai-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        >h2{
+          font-weight: normal;
+          font-size: 48px;
+          color:#fff;
+        }
+        >p{
+          width:500px;
+          margin: 0 auto;
+          padding-bottom: 24px;
+          font-size:16px;
+          line-height: 28px;
+          color: #fff;
+        }
+        .btn-box{
+          font-size: 0;
+          >a{
+            font-size: 16px;
+            padding: 10px 20px;
+            color: #fff;
+            border: 1px solid #fff;
+            &:first-child{
+              margin-right: 10px;
+            }
+            &:hover{
+              text-decoration: none;
+              background: #fff;
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .features-intro{
+    padding-bottom: 40px;
+    >h3{
+      text-align: center;
+      margin: 80px 0 50px;
+    }
+    >.intro{
+      width: 600px;
+      line-height: 26px;
+      padding-bottom: 44px;
+      margin: 0 auto;
+      font-size: 14px;
+      color: #999;
+      text-align: center;
+    }
+    .item{
+      padding: 30px 30px 10px;
+      margin-bottom: 20px;
+      background: #fff;
+      .intro{
+        color: #999;
+        font-size:14px;
+        margin:10px 0;
+      }
+      .hezuo{
+        color: #999;
+        img{
+          width: 20px;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+  .tech-section{
+    background: #fff;
+    overflow: hidden;
+    >h3{
+      text-align: center;
+      margin: 80px 0 50px;
+    }
+    .item{
+      .tech-icon{
+        background: url('/images/skill-2.png') no-repeat;
+        background-size: contain;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+      }
+      .tech-title{
+        padding: 40px 0 24px;
+        font-size: 18px;
+        color: #333;
+        text-align: center;
+      }
+      .tech-intro{
+        text-align: center;
+        color: #999;
+        font-size: 14px;
+        line-height: 26px;
+      }
+    }
+  }
+
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
 @media (min-width: 768px) {
   .navbar-wrapper{
     .container{
-      width: 100%;
+      width: 1200px;
     }
     .navbar {
       padding-right: 0;
       padding-left: 0;
+    }
+    .login{
+      margin-left:10px;
+      a{
+        //border: 1px solid #41d6c3;
+        color: #fff;
+        display: inline-block;
+        padding: 5px 10px;
+        margin-top: 10px;
+        background: #337ab7;
+      }
     }
   }
   /* Bump up size of carousel content */
@@ -189,11 +310,34 @@ body {
       padding: 15px 40px;
       font-size: 18px;
     }
+    &.scenes-try{
+      background: #fff;
+      padding:80px 0 40px;
+    }
   }
 }
 
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-wrapper{
+    .login{
+      a{
+        color:#41d6c3;
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .scenesBox{
+    .home-banner{
+      .banner-content{
+        height: 200px;
+      }
+    }
   }
 }

@@ -1,0 +1,80 @@
+extends ./layouts/default.pug
+
+block content
+  .scenesBox
+    .home-banner
+      .banner-content
+        .ai-container
+          h2 平台技术
+          p 为您提供高精度的语音识别服务，融合百度领先的自然语言处理技术支持多场景智能语音交互
+          .btn-box
+            a(href="#") 立即使用
+            a(href="#") 技术文档
+    .container.features-intro
+      h3 功能介绍
+      p.intro 百度语音识别为开发者提供业界优质且免费的语音服务，通过场景识别优化，为车载导航，智能家居和社交聊天等行业提供语音解决方案，准确率达到90%以上，让您的应用绘“声”绘色
+      .intro-img
+        img(src=('/images/introduce.png'))
+      h3 应用场景
+      .row
+        .col-md-6
+          .item
+            h4 社交聊天
+            p.intro 社交聊天发送实时语音，支持中文，英文识别，方言支持粤语，四川话。让沟通交流更加准确快捷
+            hr
+            .hezuo
+              span 合作案例：
+              span
+                img(src='/images/kungfu.png')
+                span 百度科技
+        .col-md-6
+          .item
+            h4 社交聊天
+            p.intro 社交聊天发送实时语音，支持中文，英文识别，方言支持粤语，四川话。让沟通交流更加准确快捷
+            hr
+            .hezuo
+              span 合作案例：
+              span
+                img(src='/images/kungfu.png')
+                span 百度科技
+        .col-md-6
+          .item
+            h4 社交聊天
+            p.intro 社交聊天发送实时语音，支持中文，英文识别，方言支持粤语，四川话。让沟通交流更加准确快捷
+            hr
+            .hezuo
+              span 合作案例：
+              span
+                img(src='/images/kungfu.png')
+                span 百度科技
+        .col-md-6
+          .item
+            h4 社交聊天
+            p.intro 社交聊天发送实时语音，支持中文，英文识别，方言支持粤语，四川话。让沟通交流更加准确快捷
+            hr
+            .hezuo
+              span 合作案例：
+              span
+                img(src='/images/kungfu.png')
+                span 百度科技
+    .tech-section
+      h3 技术特色
+      .container
+        .row
+          .col-md-4
+            .item
+              .tech-icon
+              .tech-title 全平台REST API
+              .tech-intro 行业率先推出语音识别REST API，采用HTTP方式请求，可适用于任何平台的语音识别
+          .col-md-4
+            .item
+              .tech-icon
+              .tech-title 全平台REST API
+              .tech-intro 行业率先推出语音识别REST API，采用HTTP方式请求，可适用于任何平台的语音识别
+          .col-md-4
+            .item
+              .tech-icon
+              .tech-title 全平台REST API
+              .tech-intro 行业率先推出语音识别REST API，采用HTTP方式请求，可适用于任何平台的语音识别
+    .try.scenes-try
+      a.btn.btn-info.tryuse(href='/demo') 免费试用

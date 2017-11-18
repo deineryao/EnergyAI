@@ -6,10 +6,12 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var lessMiddleware = require('less-middleware');
 
+//routes相关
 var index = require('./routes/index');
 var users = require('./routes/users');
 var demo = require('./routes/demo');
 var download = require('./routes/download');
+var scenes = require('./routes/scenes');
 
 var app = express();
 
@@ -30,7 +32,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/demo', demo);
-app.use('/download', download)
+app.use('/download', download);
+app.use('/scenes', scenes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
