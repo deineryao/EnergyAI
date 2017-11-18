@@ -13,6 +13,7 @@ var demo = require('./routes/demo');
 var download = require('./routes/download');
 var scenes = require('./routes/scenes');
 var login = require('./routes/login');
+var api = require('./routes/api');
 
 var app = express();
 
@@ -36,6 +37,7 @@ app.use('/demo', demo);
 app.use('/download', download);
 app.use('/scenes', scenes);
 app.use('/login', login);
+app.use('/api', api);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
