@@ -15,6 +15,7 @@ var scenes = require('./routes/scenes');
 var paltform = require('./routes/paltform');
 var login = require('./routes/login');
 var api = require('./routes/api');
+var about = require('./routes/about');
 
 var app = express();
 
@@ -38,6 +39,7 @@ app.use('/demo', demo);
 app.use('/download', download);
 app.use('/scenes', scenes);
 app.use('/paltform', paltform);
+app.use('/about', about);
 app.use('/login', login);
 app.use('/api', api);
 
