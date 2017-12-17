@@ -12,6 +12,7 @@ var users = require('./routes/users');
 var demo = require('./routes/demo');
 var download = require('./routes/download');
 var scenes = require('./routes/scenes');
+var paltform = require('./routes/paltform');
 var login = require('./routes/login');
 var api = require('./routes/api');
 
@@ -36,6 +37,7 @@ app.use('/users', users);
 app.use('/demo', demo);
 app.use('/download', download);
 app.use('/scenes', scenes);
+app.use('/paltform', paltform);
 app.use('/login', login);
 app.use('/api', api);
 
