@@ -14,6 +14,11 @@ html(lang="zh")
 			link(rel="stylesheet", href="/css/carousel.css")
 		block scripts
 			script(src="https://www.googletagmanager.com/gtag/js?id=UA-111401742-1" async)
+		script.
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-111401742-1');
 	body(data-spy="scroll",data-target=".scrollspy")
 		include ./header.pug
 		block content
