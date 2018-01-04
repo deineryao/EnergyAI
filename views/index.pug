@@ -7,33 +7,33 @@ block content
   .carouselBanner
     +carousel("myCarousel",
       [
-        {image:"/images/carousel2.jpg",h1:"EnergyAI ",p:"提供快速、经济、可复用、可迁移和标准化的能源电力系统人工智能解决方案。",button:{caption:"Learn more",url:"/paltform"}},
+        {image:"/images/banner-bg.jpg",h1:"EnergyAI ",p:"提供快速、经济、可复用、可迁移和标准化的能源电力系统人工智能解决方案。"},
       ])
   
   .container.marketing
     h2.text-center.mb-40 用AI解决能源互联网场景问题
     .row
       .col-lg-4
-        img.img-circle(src='../images/marketing1.jpg', alt='Generic placeholder image', width='140', height='140')
+        a(href="/paltform")      
+          img.img-circle(src='../images/m-1.jpg', alt='Generic placeholder image', width='140', height='140')
         h3 负荷预测
         p
-          | Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.
+          | 对用户各类能源使用（电、气、冷、热等）的全面感知与预测，在不同观测范围、不同时空尺度下对负荷分布情况进行特征提取
         p
-          a.btn.btn-default(href='/paltform', role='button') View details »
       .col-lg-4
-        img.img-circle(src='../images/marketing2.jpg', alt='Generic placeholder image', width='140', height='140')
+        a(href="/paltform")
+          img.img-circle(src='../images/m-2.png', alt='Generic placeholder image', width='140', height='140')
         h3 新能源发电预测
         p
-          | Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
+          | 对集中式/分散式风电、光伏等新能源发电，以及储能、电动汽车等主动式负荷，实现精准预测和整体感知
         p
-          a.btn.btn-default(href='/paltform', role='button') View details »
       .col-lg-4
-        img.img-circle(src='../images/marketing3.jpg', alt='Generic placeholder image', width='140', height='140')
+        a(href="/paltform") 
+          img.img-circle(src='../images/m-3.png', alt='Generic placeholder image', width='140', height='140')
         h3 关键断面知识发现
         p
-          | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+          | 自动发现适应于电网在线运行状态的关键断面,并利用自动学习方法,在线自动发现关键断面上的精细规则作为电网安全运行知识
         p
-          a.btn.btn-default(href='/paltform', role='button') View details »
   // START THE FEATURETTES
   hr.featurette-divider
   .container.skill
