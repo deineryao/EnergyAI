@@ -155,8 +155,15 @@
   }
   background: #f4f5f7;
   .home-banner{
-    background: url('/images/banner.jpg') 50% 50% no-repeat;
-    background-size: cover;
+    &.paltform{
+      background: url('/images/banner-1.jpg') 50% 50% no-repeat;
+      background-size: cover;
+    }
+    .scenesbg{
+      img{
+        width:100%;
+      }
+    }
     .banner-content{
       text-align: center;
       height: 450px;
@@ -267,6 +274,34 @@
     }
   }
 
+}
+.features-animation{
+  >h3{
+    text-align: center;
+    margin: 30px 0;
+  }
+  .flipper{
+    border:1px solid #ddd;
+    background: #fff;
+    margin-bottom: 30px;
+    .abstract{
+      >img{
+        display: block;
+        margin:20px auto;
+      }
+      >h4{
+        text-align: center;
+      }
+      >p{
+        text-align: center;
+        padding: 30px 20px 50px;
+        color: #999;
+        font-size: 14px;
+        height:150px;
+        overflow: hidden;
+      }
+    }
+  }
 }
 
 //about us
@@ -385,8 +420,29 @@
 
   .scenesBox{
     .home-banner{
+      
       .banner-content{
         height: 200px;
+        .ai-container{
+          width:100%;
+          h2{
+            font-size: 28px;
+          }
+          >p{
+            padding: 0 20px;
+            width:auto;
+            box-sizing: border-box;
+            font-size: 12px;
+            line-height: 1.5
+          }
+          .btn-box{
+            margin-top:20px;
+            >a{
+              font-size:12px;
+              padding: 8px 15px; 
+            }
+          }
+        }
       }
     }
     .features-intro{

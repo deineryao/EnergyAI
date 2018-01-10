@@ -3,78 +3,132 @@ extends ./layouts/default.pug
 block content
   .scenesBox
     .home-banner
-      .banner-content
-        .ai-container
-          h2 平台技术
-          p 提供直观的图像用户界面，上手快速，可快速创建、训练、评估和部署人工智能算法
-          .btn-box
-            a(href="#") 立即使用
-            a(href="#") 技术文档
-    .container.features-intro
-      h3 功能介绍
-      p.intro 百度语音识别为开发者提供业界优质且免费的语音服务，通过场景识别优化，为车载导航，智能家居和社交聊天等行业提供语音解决方案，准确率达到90%以上，让您的应用绘“声”绘色
-      .intro-img
-        img(src=('/images/introduce.png'))
-      h3 应用场景
+      .scenesbg
+        img(src="/images/banner-2.jpg")
+    .container.features-animation
+      h3 智慧规划
       .row
-        .col-md-6
-          .item
-            h4 社交聊天
-            p.intro 社交聊天发送实时语音，支持中文，英文识别，方言支持粤语，四川话。让沟通交流更加准确快捷
-            hr
-            .hezuo
-              span 合作案例：
-              span
-                img(src='/images/kungfu.png')
-                span 百度科技
-        .col-md-6
-          .item
-            h4 社交聊天
-            p.intro 社交聊天发送实时语音，支持中文，英文识别，方言支持粤语，四川话。让沟通交流更加准确快捷
-            hr
-            .hezuo
-              span 合作案例：
-              span
-                img(src='/images/kungfu.png')
-                span 百度科技
-        .col-md-6
-          .item
-            h4 社交聊天
-            p.intro 社交聊天发送实时语音，支持中文，英文识别，方言支持粤语，四川话。让沟通交流更加准确快捷
-            hr
-            .hezuo
-              span 合作案例：
-              span
-                img(src='/images/kungfu.png')
-                span 百度科技
-        .col-md-6
-          .item
-            h4 社交聊天
-            p.intro 社交聊天发送实时语音，支持中文，英文识别，方言支持粤语，四川话。让沟通交流更加准确快捷
-            hr
-            .hezuo
-              span 合作案例：
-              span
-                img(src='/images/kungfu.png')
-                span 百度科技
-    .tech-section
-      h3 技术特色
-      .container
-        .row
-          .col-md-4
-            .item
-              .tech-icon
-              .tech-title 全平台REST API
-              .tech-intro 行业率先推出语音识别REST API，采用HTTP方式请求，可适用于任何平台的语音识别
-          .col-md-4
-            .item
-              .tech-icon
-              .tech-title 全平台REST API
-              .tech-intro 行业率先推出语音识别REST API，采用HTTP方式请求，可适用于任何平台的语音识别
-          .col-md-4
-            .item
-              .tech-icon
-              .tech-title 全平台REST API
-              .tech-intro 行业率先推出语音识别REST API，采用HTTP方式请求，可适用于任何平台的语音识别
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/a-1.svg",class="icon")
+              h4 新能源预测
+              p 对集中式/分散式风电、光伏等新能源发电，以及储能、电动汽车等主动式负荷，实现精准预测和整体感知
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/a-2.svg",class="icon")
+              h4 用户负荷预测
+              p 对用户各类能源使用（电、气、冷、热等）的全面感知与预测，在不同观测范围、不同时空尺度下对负荷分布情况进行特征提取
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/a-3.svg",class="icon")
+              h4 线损和可靠性
+              p todo...
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/a-4.svg",class="icon")
+              h4 能源互联网基础规划
+              p 基于预测结果和规划目标，实现电力网络和能源互联网基础设施智能规划，并评定规划的安全等级、综合效益等级
+      h3 智慧运行
+      .row
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/b-1.svg",class="icon")
+              h4 运行风险识别
+              p 结合网络拓扑、运行历史、气象、地理信息、当前运方以及关联设备数据，在线辨识电网安全稳定风险，有效预警电网故障
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/b-2.svg",class="icon")
+              h4 无功电压优化
+              p 挖掘间歇性新能源和主动式负荷无功电压特性，减少无功频繁调节和来回投切设备，实现长时间尺度无功电压优化
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/b-3.svg",class="icon")
+              h4 电能质量分析
+              p 针对电压越线、谐波污染、电压暂降等开展电能质量模式识别、电能质量特征分析和状态估计
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/b-4.svg",class="icon")
+              h4 运行调度决策
+              p 针对大量多源异构信息，提升调度员准确地把握电网关键问题能力，在线预测新能源消纳能力，并及时提供运行调度辅助决策方案
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/b-5.svg",class="icon")
+              h4 自主保护控制
+              p 运行方式日益复杂、故障后果不断严峻，对保护装置进行自主智能改进提升
+      h3 智慧检修
+      .row
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/c-1.svg",class="icon")
+              h4 资产健康诊断
+              p 挖掘设备实验数据、带电检测、在线监测等多源海量数据的高维异构特征，有效应对数据质量不高问题，实现健康状态的智能判别和预测
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/c-2.svg",class="icon")
+              h4 巡检机器人
+              p 以高性能深度神经网络为核心算法，陆地机器人/无人机搭载高清摄像机、高灵敏热成像仪、应急对讲机及其他高性能传感器，及时、精准监测运行工况、辨识预警异常情况
+      h3 智慧营销
+      .row
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/d-1.svg",class="icon")
+              h4 用电行为辨识
+              p 结合营销数据，分析客户用电行为，辨识窃电异常行为，为电网规划和综合能源服务提供决策支撑
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/d-2.svg",class="icon")
+              h4 负荷能效评估
+              p 基于海量用电数据，动态评价能效特征，挖掘用能潜力，给用户提供节电、节能建议
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/d-3.svg",class="icon")
+              h4 电动汽车管家
+              p 深度挖掘电动汽车用户驾驶行为特征参数、用户画像、聚类分析、等级评定，给用户提供充电推荐服务，智能管理电动汽车充放电行为
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/d-4.svg",class="icon")
+              h4 用户主动服务
+              p 依托多源海量数据和用户偏好辨识，对大用户及其他各类用户提供绿色、智能、优质的综合能源服务
+      h3 智慧办公
+      .row
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/e-1.svg",class="icon")
+              h4 安全加密
+              p 对电网各类多源异构数据进行加密、编码和解码，同时实现数据压缩功能
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/e-2.svg",class="icon")
+              h4 报表自动生成
+              p 基于自然语言处理技术，对不同业务文档进行学习，自动生成模板和初稿
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/e-3.svg",class="icon")
+              h4 可视化与人机交互
+              p 提供各类丰富实用的可视化技术，支持分析结果的展示互动和工作培训
+        .col-md-4
+          .flipper
+            .abstract
+              img(src="/images/e-4.svg",class="icon")
+              h4 智能仓储管理
+              p 优化物资仓位推荐及自动化工作路径，根据关键物资使用率，提供物资采购建议，实现仓储自助化管理
     .try.scenes-try
       a.btn.btn-info.tryuse(href='/demo') 免费试用
